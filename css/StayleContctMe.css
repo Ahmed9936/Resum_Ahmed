@@ -188,6 +188,9 @@ body{
   border-radius: 20px;
   font-size: 20px;
 }
+.flx{
+  display: flex;
+}
 
 
 @media (max-width: 950px) {
