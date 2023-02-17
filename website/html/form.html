@@ -13,7 +13,8 @@
 
     <link rel="stylesheet" href="../CSS/StayleContctMe.css">
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
     <title>Ahmed Sami</title>
 </head>
 <body>
@@ -91,48 +92,48 @@
           <div class="right-side">
             <div class="topic-text">Ask for Serves</div>
             <p>Specify all the requirements and submit the form, make sure to fill it out correctly, and we will get back to you.</p>
-        <form action="#" id="my_form">
+        <form method="POST" action="/contact-me" id="my_form" name="myContactForm" >
             <div class="input-box">
-              <input type="text" placeholder="Enter your name" name="name" minlength="1" maxlength="100" id="name" required autofocus>
+              <input type="text" placeholder="Enter your name" name="name" minlength="1" maxlength="100" id="name" required autofocus onblur="validateName()">
             </div>
             <section>
               <div class="BOX">
                 <h4 class="texthed">Your Gender</h4>
                   <div >
                     <label>
-                      <input type="radio" name="gender" value="Male">
-                          Male
-                    </label>
-                    <label>
-                      <input type="radio" name="gender" value="Female">
-                        Female
-                    </label>
+                      <input type="radio" name="gender" value="Male" onchange="handleGenderChange(this)">
+                      Male
+                  </label>
+                  <label>
+                      <input type="radio" name="gender" value="Female" onchange="handleGenderChange(this)">
+                      Female
+                  </label>
                   </div>
               </div>
             </section>
             <div class="input-box">
-              <input type="tel" class="input" name="mobile" minlength="9" maxlength="14" placeholder="Enter your mobile 0500000000" id="mobile" required>
+              <input type="tel" class="input" name="mobile" minlength="9" maxlength="14" placeholder="Enter your mobile 0500000000" id="mobile" required onblur="validateMobile()" >
             </div>
             <div class="BOXX">
               <h4 class="texthed">Language of communication</h4>
               <select class="leststyle" name="languageOfCommunication" id="lang">
-                  <option value="Arabic" selected>Arabic</option>
-                  <option value="English">English</option>
-                  <option value="French">French</option>
-              </select>
+                <option value="Arabic" selected>Arabic</option>
+                <option value="English">English</option>
+                <option value="French">French</option>
+            </select>
             </div>
               <div class="input-box">
-                <input type="email" class="input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="2" maxlength="200" placeholder="Enter your Email" id="email" required>
+                <input type="email" class="input" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" minlength="2" maxlength="200" placeholder="Enter your Email" id="email" required onclick="showEmailInfo()" >
               </div>
               <div class="input-box">
-                <input type="date" placeholder="Enter due data " id="date" required>
+                <input type="date" name="date" id="date" required>
               </div>
               <div class="input-box message-box">
                   <textarea class="inputMassige" name="message" minlength="1" maxlength="500" placeholder="Your Message" id="massig"></textarea>
               </div>
               <p id="mas"></p>
               <div class="flx">
-                <input class="btnm" type="submit" value="Send Now" formnovalidate >
+                <input class="btnm" type="submit" value="Send Now"  formnovalidate>
                 <input class="btnm" type="reset" value="Reset" >
               </div> 
           </form >
