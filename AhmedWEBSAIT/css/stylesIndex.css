@@ -1,0 +1,97 @@
+
+/* assignment 1 / Ahmed Sami mohmaed / 1948660  */
+.namm{
+    border-radius: 20px;
+    background: rgba(209, 214, 210, 0.6);
+}
+.nav-item{
+    margin-left: 2%;
+    border-radius: 80%;
+    padding: 2%;
+}
+.navbar-brand{
+    margin-left: auto;
+    margin-right: auto;
+}
+html {
+    font-size: 62.5%;
+  }
+body{
+    padding: 10px;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 10px;
+    background-image: url(../imge/my.jpeg) ;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    padding: 2%;
+    width:30PX;
+    height: 30PX;
+}
+
+
+.mycard{
+    display: flex;
+    justify-content: center;
+    background: rgba(209, 214, 210, 0.6);    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    color: #000000;
+}
+.mycard2{
+    display: flex;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.6);    
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    color: #000000;
+}
+
+
+.photo{
+    display: flex;
+    text-align: center;
+    width: 40%;
+    border-radius: 100%;
+}
+
+.text{
+    width: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-style:oblique;
+    font-weight: bold;
+}
+
+h4{
+    text-align: left;
+    font-style:normal;
+}
+ 
+footer{
+    position:fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+.p2{
+    border-radius: 100%;
+    width:80% ;
+    height:200px;
+}
