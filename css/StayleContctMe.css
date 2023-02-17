@@ -131,7 +131,7 @@ body{
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"]{
+.right-side .button input[type="submit"]{
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -142,9 +142,53 @@ body{
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
+.button input[type="submit"]:hover{
   background: #5029bc;
 }
+.btnm{
+  margin: 5%;
+  padding: 5%;
+  width: 40%;
+  border: none;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  
+}
+.btnm:hover{
+  background-color: #817FFD;
+
+}
+
+
+.BOX{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 0PX;
+  margin-top: 2%;
+}
+
+.BOXX{
+  display: flex;
+  padding-bottom: 0PX;
+  margin-top: 2%;
+}
+.texthed{
+  margin-right: 15%;
+  padding: 1%;
+  color: gray;
+  font-size: 20px;
+}
+.leststyle{
+  padding: 1%;
+  width: 30%;
+  color: #808080;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
 
 @media (max-width: 950px) {
   .container{
